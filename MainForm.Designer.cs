@@ -30,18 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             panelMenu = new Panel();
-            btnNavFav = new Button();
+            btnNavCalculator = new Button();
             btnNavFlashcard = new Button();
             btnNavConstellation = new Button();
             btnNavStar = new Button();
             panelLogo = new Panel();
+            button1 = new Button();
             panelMenu.SuspendLayout();
             SuspendLayout();
             // 
             // panelMenu
             // 
             panelMenu.BackColor = Color.FromArgb(184, 210, 255);
-            panelMenu.Controls.Add(btnNavFav);
+            panelMenu.Controls.Add(button1);
+            panelMenu.Controls.Add(btnNavCalculator);
             panelMenu.Controls.Add(btnNavFlashcard);
             panelMenu.Controls.Add(btnNavConstellation);
             panelMenu.Controls.Add(btnNavStar);
@@ -49,17 +51,17 @@
             resources.ApplyResources(panelMenu, "panelMenu");
             panelMenu.Name = "panelMenu";
             // 
-            // btnNavFav
+            // btnNavCalculator
             // 
-            btnNavFav.BackColor = Color.FromArgb(184, 210, 255);
-            btnNavFav.Cursor = Cursors.Hand;
-            resources.ApplyResources(btnNavFav, "btnNavFav");
-            btnNavFav.FlatAppearance.BorderSize = 0;
-            btnNavFav.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 233, 255);
-            btnNavFav.FlatAppearance.MouseOverBackColor = Color.FromArgb(238, 244, 255);
-            btnNavFav.Image = Properties.Resources.icons8_favorite_16;
-            btnNavFav.Name = "btnNavFav";
-            btnNavFav.UseVisualStyleBackColor = false;
+            btnNavCalculator.BackColor = Color.FromArgb(184, 210, 255);
+            btnNavCalculator.Cursor = Cursors.Hand;
+            resources.ApplyResources(btnNavCalculator, "btnNavCalculator");
+            btnNavCalculator.FlatAppearance.BorderSize = 0;
+            btnNavCalculator.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 233, 255);
+            btnNavCalculator.FlatAppearance.MouseOverBackColor = Color.FromArgb(238, 244, 255);
+            btnNavCalculator.Image = Properties.Resources.icons8_calculator_16;
+            btnNavCalculator.Name = "btnNavCalculator";
+            btnNavCalculator.UseVisualStyleBackColor = false;
             // 
             // btnNavFlashcard
             // 
@@ -103,6 +105,18 @@
             resources.ApplyResources(panelLogo, "panelLogo");
             panelLogo.Name = "panelLogo";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(184, 210, 255);
+            button1.Cursor = Cursors.Hand;
+            resources.ApplyResources(button1, "button1");
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 233, 255);
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(238, 244, 255);
+            button1.Image = Properties.Resources.icons8_favorite_16;
+            button1.Name = "button1";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -118,8 +132,9 @@
         private Panel panelMenu;
         private Button btnNavStar;
         private Panel panelLogo;
-        private Button btnNavFav;
+        private Button btnNavCalculator;
         private Button btnNavFlashcard;
         private Button btnNavConstellation;
+        private Button button1;
     }
 }

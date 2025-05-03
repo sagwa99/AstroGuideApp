@@ -63,6 +63,16 @@ namespace AstroGuideApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_calculator_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-calculator-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_constellation_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-constellation-16", resourceCulture);

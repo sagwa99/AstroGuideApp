@@ -118,43 +118,82 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnNavFav.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="button1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="btnNavFav.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnNavFav.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="button1.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="btnNavFav.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 296</value>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="btnNavFav.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 353</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>235, 57</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnNavFav.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="btnNavFav.Text" xml:space="preserve">
+  <data name="button1.Text" xml:space="preserve">
     <value>Обране</value>
   </data>
-  <data name="btnNavFav.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="button1.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;btnNavFav.Name" xml:space="preserve">
-    <value>btnNavFav</value>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
   </data>
-  <data name="&gt;&gt;btnNavFav.Type" xml:space="preserve">
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnNavFav.Parent" xml:space="preserve">
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
     <value>panelMenu</value>
   </data>
-  <data name="&gt;&gt;btnNavFav.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="btnNavCalculator.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnNavCalculator.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnNavCalculator.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnNavCalculator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 296</value>
+  </data>
+  <data name="btnNavCalculator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 57</value>
+  </data>
+  <data name="btnNavCalculator.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnNavCalculator.Text" xml:space="preserve">
+    <value>Астро-калькулятор</value>
+  </data>
+  <data name="btnNavCalculator.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;btnNavCalculator.Name" xml:space="preserve">
+    <value>btnNavCalculator</value>
+  </data>
+  <data name="&gt;&gt;btnNavCalculator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNavCalculator.Parent" xml:space="preserve">
+    <value>panelMenu</value>
+  </data>
+  <data name="&gt;&gt;btnNavCalculator.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnNavFlashcard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -190,7 +229,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;btnNavFlashcard.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnNavConstellation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -226,7 +265,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;btnNavConstellation.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btnNavStar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -262,7 +301,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;btnNavStar.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="panelLogo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -286,7 +325,7 @@
     <value>panelMenu</value>
   </data>
   <data name="&gt;&gt;panelLogo.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="panelMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
