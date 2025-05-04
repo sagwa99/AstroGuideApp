@@ -1,0 +1,508 @@
+﻿[
+    {
+        "Name": "Сіріус",
+        "Constellation": "Великий Пес",
+        "ApparentMagnitude": -1.46,
+        "Distance": 8.6,
+        "Luminosity": 25.4,
+        "Coordinates": {
+            "RightAscension": "06h 45m 08.9s",
+            "Declination": "-16° 42′ 58″"
+        }
+    },
+    {
+        "Name": "Вега",
+        "Constellation": "Ліра",
+        "ApparentMagnitude": 0.03,
+        "Distance": 25.0,
+        "Luminosity": 40,
+        "Coordinates": {
+            "RightAscension": "18h 36m 56.3s",
+            "Declination": "+38° 47′ 01″"
+        }
+    },
+    {
+        "Name": "Капелла",
+        "Constellation": "Візничий",
+        "ApparentMagnitude": 0.08,
+        "Distance": 42.9,
+        "Luminosity": 157,
+        "Coordinates": {
+            "RightAscension": "05h 16m 41.4s",
+            "Declination": "+45° 59′ 53″"
+        }
+    },
+    {
+        "Name": "Арктур",
+        "Constellation": "Волопас",
+        "ApparentMagnitude": -0.05,
+        "Distance": 36.7,
+        "Luminosity": 170,
+        "Coordinates": {
+            "RightAscension": "14h 15m 39.7s",
+            "Declination": "+19° 10′ 57″"
+        }
+    },
+    {
+        "Name": "Рігель",
+        "Constellation": "Оріон",
+        "ApparentMagnitude": 0.13,
+        "Distance": 860,
+        "Luminosity": 120000,
+        "Coordinates": {
+            "RightAscension": "05h 14m 32.3s",
+            "Declination": "-08° 12′ 06″"
+        }
+    },
+    {
+        "Name": "Проціон",
+        "Constellation": "Малий Пес",
+        "ApparentMagnitude": 0.34,
+        "Distance": 11.5,
+        "Luminosity": 7.5,
+        "Coordinates": {
+            "RightAscension": "07h 39m 18.1s",
+            "Declination": "+05° 13′ 30″"
+        }
+    },
+    {
+        "Name": "Бетельгейзе",
+        "Constellation": "Оріон",
+        "ApparentMagnitude": 0.50,
+        "Distance": 548,
+        "Luminosity": 126000,
+        "Coordinates": {
+            "RightAscension": "05h 55m 10.3s",
+            "Declination": "+07° 24′ 25″"
+        }
+    },
+    {
+        "Name": "Ахернар",
+        "Constellation": "Ерідан",
+        "ApparentMagnitude": 0.46,
+        "Distance": 139,
+        "Luminosity": 3150,
+        "Coordinates": {
+            "RightAscension": "01h 37m 42.8s",
+            "Declination": "-57° 14′ 12″"
+        }
+    },
+    {
+        "Name": "Альдебаран",
+        "Constellation": "Телець",
+        "ApparentMagnitude": 0.85,
+        "Distance": 65,
+        "Luminosity": 518,
+        "Coordinates": {
+            "RightAscension": "04h 35m 55.2s",
+            "Declination": "+16° 30′ 33″"
+        }
+    },
+    {
+        "Name": "Антарес",
+        "Constellation": "Скорпіон",
+        "ApparentMagnitude": 1.09,
+        "Distance": 550,
+        "Luminosity": 57500,
+        "Coordinates": {
+            "RightAscension": "16h 29m 24.4s",
+            "Declination": "-26° 25′ 55″"
+        }
+    },
+    {
+        "Name": "Спіка",
+        "Constellation": "Діва",
+        "ApparentMagnitude": 1.04,
+        "Distance": 250,
+        "Luminosity": 13600,
+        "Coordinates": {
+            "RightAscension": "13h 25m 11.6s",
+            "Declination": "-11° 09′ 41″"
+        }
+    },
+    {
+        "Name": "Поллукс",
+        "Constellation": "Близнюки",
+        "ApparentMagnitude": 1.14,
+        "Distance": 33.7,
+        "Luminosity": 43,
+        "Coordinates": {
+            "RightAscension": "07h 45m 18.9s",
+            "Declination": "+28° 01′ 34″"
+        }
+    },
+    {
+        "Name": "Фомальгаут",
+        "Constellation": "Південна Риба",
+        "ApparentMagnitude": 1.16,
+        "Distance": 25.1,
+        "Luminosity": 16.6,
+        "Coordinates": {
+            "RightAscension": "22h 57m 39.0s",
+            "Declination": "-29° 37′ 20″"
+        }
+    },
+    {
+        "Name": "Денеб",
+        "Constellation": "Лебідь",
+        "ApparentMagnitude": 1.25,
+        "Distance": 2600,
+        "Luminosity": 196000,
+        "Coordinates": {
+            "RightAscension": "20h 41m 25.9s",
+            "Declination": "+45° 16′ 49″"
+        }
+    },
+    {
+        "Name": "Мімоза",
+        "Constellation": "Південний Хрест",
+        "ApparentMagnitude": 1.25,
+        "Distance": 280,
+        "Luminosity": 34000,
+        "Coordinates": {
+            "RightAscension": "12h 47m 43.2s",
+            "Declination": "-59° 41′ 19″"
+        }
+    },
+    {
+        "Name": "Регул",
+        "Constellation": "Лев",
+        "ApparentMagnitude": 1.35,
+        "Distance": 79.3,
+        "Luminosity": 288,
+        "Coordinates": {
+            "RightAscension": "10h 08m 22.3s",
+            "Declination": "+11° 58′ 02″"
+        }
+    },
+    {
+        "Name": "Шаула",
+        "Constellation": "Скорпіон",
+        "ApparentMagnitude": 1.62,
+        "Distance": 570,
+        "Luminosity": 36000,
+        "Coordinates": {
+            "RightAscension": "17h 33m 36.5s",
+            "Declination": "-37° 06′ 14″"
+        }
+    },
+    {
+        "Name": "Бельлатрикс",
+        "Constellation": "Оріон",
+        "ApparentMagnitude": 1.64,
+        "Distance": 250,
+        "Luminosity": 9211,
+        "Coordinates": {
+            "RightAscension": "05h 25m 07.9s",
+            "Declination": "+06° 20′ 59″"
+        }
+    },
+    {
+        "Name": "Адара",
+        "Constellation": "Великий Пес",
+        "ApparentMagnitude": 1.50,
+        "Distance": 430,
+        "Luminosity": 39000,
+        "Coordinates": {
+            "RightAscension": "06h 58m 37.5s",
+            "Declination": "-28° 58′ 20″"
+        }
+    },
+    {
+        "Name": "Кастор",
+        "Constellation": "Близнюки",
+        "ApparentMagnitude": 1.58,
+        "Distance": 51,
+        "Luminosity": 43.4,
+        "Coordinates": {
+            "RightAscension": "07h 34m 35.9s",
+            "Declination": "+31° 53′ 18″"
+        }
+    },
+    {
+        "Name": "Альтаїр",
+        "Constellation": "Орел",
+        "ApparentMagnitude": 0.77,
+        "Distance": 16.7,
+        "Luminosity": 10.6,
+        "Coordinates": {
+            "RightAscension": "19h 50m 47.0s",
+            "Declination": "+08° 52′ 06″"
+        }
+    },
+    {
+        "Name": "Альнілам",
+        "Constellation": "Оріон",
+        "ApparentMagnitude": 1.69,
+        "Distance": 2000,
+        "Luminosity": 375000,
+        "Coordinates": {
+            "RightAscension": "05h 36m 12.8s",
+            "Declination": "-01° 12′ 07″"
+        }
+    },
+    {
+        "Name": "Альнітак",
+        "Constellation": "Оріон",
+        "ApparentMagnitude": 1.77,
+        "Distance": 1260,
+        "Luminosity": 100000,
+        "Coordinates": {
+            "RightAscension": "05h 40m 45.5s",
+            "Declination": "-01° 56′ 34″"
+        }
+    },
+    {
+        "Name": "Саїф",
+        "Constellation": "Оріон",
+        "ApparentMagnitude": 2.06,
+        "Distance": 720,
+        "Luminosity": 57000,
+        "Coordinates": {
+            "RightAscension": "05h 47m 45.4s",
+            "Declination": "-09° 40′ 11″"
+        }
+    },
+    {
+        "Name": "Мінтака",
+        "Constellation": "Оріон",
+        "ApparentMagnitude": 2.25,
+        "Distance": 900,
+        "Luminosity": 90000,
+        "Coordinates": {
+            "RightAscension": "05h 32m 00.4s",
+            "Declination": "-00° 17′ 57″"
+        }
+    },
+    {
+        "Name": "Меїса",
+        "Constellation": "Оріон",
+        "ApparentMagnitude": 3.54,
+        "Distance": 1137,
+        "Luminosity": 9900,
+        "Coordinates": {
+            "RightAscension": "06h 14m 13.4s",
+            "Declination": "+09° 56′ 03″"
+        }
+    },
+    {
+        "Name": "Дубхе",
+        "Constellation": "Велика Ведмедиця",
+        "ApparentMagnitude": 1.79,
+        "Distance": 123,
+        "Luminosity": 316,
+        "Coordinates": {
+            "RightAscension": "11h 03m 43.7s",
+            "Declination": "+61° 45′ 03″"
+        }
+    },
+    {
+        "Name": "Мерак",
+        "Constellation": "Велика Ведмедиця",
+        "ApparentMagnitude": 2.37,
+        "Distance": 79.7,
+        "Luminosity": 63,
+        "Coordinates": {
+            "RightAscension": "11h 01m 50.5s",
+            "Declination": "+56° 22′ 57″"
+        }
+    },
+    {
+        "Name": "Фекда",
+        "Constellation": "Велика Ведмедиця",
+        "ApparentMagnitude": 2.44,
+        "Distance": 83.2,
+        "Luminosity": 71,
+        "Coordinates": {
+            "RightAscension": "11h 53m 49.8s",
+            "Declination": "+53° 41′ 41″"
+        }
+    },
+    {
+        "Name": "Аліот",
+        "Constellation": "Велика Ведмедиця",
+        "ApparentMagnitude": 1.77,
+        "Distance": 82.6,
+        "Luminosity": 108,
+        "Coordinates": {
+            "RightAscension": "12h 54m 01.7s",
+            "Declination": "+55° 57′ 35″"
+        }
+    },
+    {
+        "Name": "Міцар",
+        "Constellation": "Велика Ведмедиця",
+        "ApparentMagnitude": 2.04,
+        "Distance": 82.9,
+        "Luminosity": 78,
+        "Coordinates": {
+            "RightAscension": "13h 23m 55.5s",
+            "Declination": "+54° 55′ 31″"
+        }
+    },
+    {
+        "Name": "Денебола",
+        "Constellation": "Лев",
+        "ApparentMagnitude": 2.14,
+        "Distance": 35.9,
+        "Luminosity": 12,
+        "Coordinates": {
+            "RightAscension": "11h 49m 03.6s",
+            "Declination": "+14° 34′ 19″"
+        }
+    },
+    {
+        "Name": "Альгіба",
+        "Constellation": "Лев",
+        "ApparentMagnitude": 2.61,
+        "Distance": 126,
+        "Luminosity": 180,
+        "Coordinates": {
+            "RightAscension": "10h 19m 58.3s",
+            "Declination": "+19° 50′ 30″"
+        }
+    },
+    {
+        "Name": "Зосма",
+        "Constellation": "Лев",
+        "ApparentMagnitude": 2.56,
+        "Distance": 58,
+        "Luminosity": 23,
+        "Coordinates": {
+            "RightAscension": "11h 14m 06.5s",
+            "Declination": "+20° 31′ 25″"
+        }
+    },
+    {
+        "Name": "Сулафат",
+        "Constellation": "Ліра",
+        "ApparentMagnitude": 3.24,
+        "Distance": 620,
+        "Luminosity": 2100,
+        "Coordinates": {
+            "RightAscension": "18h 58m 56.6s",
+            "Declination": "+32° 41′ 22″"
+        }
+    },
+    {
+        "Name": "Шелляк",
+        "Constellation": "Ліра",
+        "ApparentMagnitude": 4.52,
+        "Distance": 960,
+        "Luminosity": 4530,
+        "Coordinates": {
+            "RightAscension": "18h 49m 51.1s",
+            "Declination": "+39° 40′ 06″"
+        }
+    },
+    {
+        "Name": "Дельта Скорпіона",
+        "Constellation": "Скорпіон",
+        "ApparentMagnitude": 2.31,
+        "Distance": 470,
+        "Luminosity": 8500,
+        "Coordinates": {
+            "RightAscension": "16h 00m 20.0s",
+            "Declination": "-22° 37′ 18″"
+        }
+    },
+    {
+        "Name": "Епсилон Скорпіона",
+        "Constellation": "Скорпіон",
+        "ApparentMagnitude": 2.31,
+        "Distance": 65,
+        "Luminosity": 18,
+        "Coordinates": {
+            "RightAscension": "16h 50m 09.8s",
+            "Declination": "-34° 17′ 36″"
+        }
+    },
+    {
+        "Name": "Мулафар",
+        "Constellation": "Скорпіон",
+        "ApparentMagnitude": 2.99,
+        "Distance": 580,
+        "Luminosity": 7300,
+        "Coordinates": {
+            "RightAscension": "17h 20m 24.2s",
+            "Declination": "-37° 04′ 45″"
+        }
+    },
+    {
+        "Name": "Альхена",
+        "Constellation": "Близнюки",
+        "ApparentMagnitude": 1.92,
+        "Distance": 105,
+        "Luminosity": 120,
+        "Coordinates": {
+            "RightAscension": "06h 37m 42.7s",
+            "Declination": "+16° 23′ 57″"
+        }
+    },
+    {
+        "Name": "Васат",
+        "Constellation": "Близнюки",
+        "ApparentMagnitude": 3.53,
+        "Distance": 59,
+        "Luminosity": 6.5,
+        "Coordinates": {
+            "RightAscension": "07h 20m 07.4s",
+            "Declination": "+21° 58′ 56″"
+        }
+    },
+    {
+        "Name": "Муфрід",
+        "Constellation": "Волопас",
+        "ApparentMagnitude": 2.68,
+        "Distance": 37,
+        "Luminosity": 32,
+        "Coordinates": {
+            "RightAscension": "13h 54m 41.1s",
+            "Declination": "+18° 23′ 52″"
+        }
+    },
+    {
+        "Name": "Ізар",
+        "Constellation": "Волопас",
+        "ApparentMagnitude": 2.37,
+        "Distance": 203,
+        "Luminosity": 501,
+        "Coordinates": {
+            "RightAscension": "14h 45m 00.4s",
+            "Declination": "+27° 04′ 27″"
+        }
+    },
+    {
+        "Name": "Альнаїр",
+        "Constellation": "Журавель",
+        "ApparentMagnitude": 1.74,
+        "Distance": 101,
+        "Luminosity": 263,
+        "Coordinates": {
+            "RightAscension": "22h 08m 13.9s",
+            "Declination": "-46° 57′ 40″"
+        }
+    },
+    {
+        "Name": "Гакрукс",
+        "Constellation": "Південний Хрест",
+        "ApparentMagnitude": 1.59,
+        "Distance": 88,
+        "Luminosity": 160,
+        "Coordinates": {
+            "RightAscension": "12h 31m 09.9s",
+            "Declination": "-57° 06′ 48″"
+        }
+    },
+    {
+        "Name": "Альнітам",
+        "Constellation": "Південний Хрест",
+        "ApparentMagnitude": 2.80,
+        "Distance": 364,
+        "Luminosity": 3800,
+        "Coordinates": {
+            "RightAscension": "12h 26m 35.9s",
+            "Declination": "-63° 05′ 57″"
+        }
+    }
+]
