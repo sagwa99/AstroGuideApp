@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StarForm));
             panel1 = new Panel();
-            comboBox1 = new ComboBox();
-            button1 = new Button();
-            textBox1 = new TextBox();
+            btnSearch = new Button();
+            txtSearch = new TextBox();
+            comboBoxFilterSearch = new ComboBox();
             gridViewStars = new DataGridView();
             button2 = new Button();
             button3 = new Button();
@@ -45,47 +45,52 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(btnSearch);
+            panel1.Controls.Add(txtSearch);
+            panel1.Controls.Add(comboBoxFilterSearch);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(697, 29);
+            panel1.Size = new Size(697, 43);
             panel1.TabIndex = 1;
             // 
-            // comboBox1
+            // btnSearch
             // 
-            comboBox1.Dock = DockStyle.Left;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(377, 0);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(187, 28);
-            comboBox1.TabIndex = 6;
+            btnSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnSearch.BackColor = Color.FromArgb(184, 210, 255);
+            btnSearch.Cursor = Cursors.Hand;
+            btnSearch.Image = Properties.Resources.icons8_search_16;
+            btnSearch.Location = new Point(639, 6);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(37, 34);
+            btnSearch.TabIndex = 2;
+            btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click;
             // 
-            // button1
+            // txtSearch
             // 
-            button1.Dock = DockStyle.Right;
-            button1.Location = new Point(603, 0);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 2;
-            button1.Text = "Пошук";
-            button1.UseVisualStyleBackColor = true;
+            txtSearch.BorderStyle = BorderStyle.None;
+            txtSearch.Location = new Point(31, 9);
+            txtSearch.Multiline = true;
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(389, 28);
+            txtSearch.TabIndex = 2;
+            txtSearch.KeyDown += txtSearch_KeyDown;
             // 
-            // textBox1
+            // comboBoxFilterSearch
             // 
-            textBox1.Dock = DockStyle.Left;
-            textBox1.Location = new Point(0, 0);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(377, 27);
-            textBox1.TabIndex = 2;
+            comboBoxFilterSearch.Anchor = AnchorStyles.Top;
+            comboBoxFilterSearch.FormattingEnabled = true;
+            comboBoxFilterSearch.Location = new Point(436, 9);
+            comboBoxFilterSearch.Name = "comboBoxFilterSearch";
+            comboBoxFilterSearch.Size = new Size(187, 28);
+            comboBoxFilterSearch.TabIndex = 6;
             // 
             // gridViewStars
             // 
             gridViewStars.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             gridViewStars.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            gridViewStars.Location = new Point(12, 35);
+            gridViewStars.Location = new Point(12, 74);
             gridViewStars.Name = "gridViewStars";
             gridViewStars.RowHeadersWidth = 51;
             gridViewStars.Size = new Size(673, 322);
@@ -93,48 +98,73 @@
             // 
             // button2
             // 
-            button2.Location = new Point(12, 385);
+            button2.BackColor = Color.FromArgb(184, 210, 255);
+            button2.Cursor = Cursors.Hand;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 12F);
+            button2.Location = new Point(12, 402);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(107, 47);
             button2.TabIndex = 3;
             button2.Text = "Додати";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
-            button3.Location = new Point(237, 385);
+            button3.BackColor = Color.FromArgb(184, 210, 255);
+            button3.Cursor = Cursors.Hand;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 12F);
+            button3.Location = new Point(258, 402);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(111, 47);
             button3.TabIndex = 4;
             button3.Text = "Видалити";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
-            button4.Location = new Point(127, 385);
+            button4.BackColor = Color.FromArgb(184, 210, 255);
+            button4.Cursor = Cursors.Hand;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Segoe UI", 12F);
+            button4.Location = new Point(125, 402);
             button4.Name = "button4";
-            button4.Size = new Size(94, 29);
+            button4.Size = new Size(127, 47);
             button4.TabIndex = 5;
             button4.Text = "Редагувати";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
-            button5.Location = new Point(515, 385);
+            button5.BackColor = Color.FromArgb(184, 210, 255);
+            button5.Cursor = Cursors.Hand;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Segoe UI", 12F);
+            button5.Location = new Point(375, 402);
             button5.Name = "button5";
-            button5.Size = new Size(170, 29);
+            button5.Size = new Size(174, 47);
             button5.TabIndex = 6;
             button5.Text = "Оновити таблицю";
-            button5.UseVisualStyleBackColor = true;
+            button5.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
-            button6.Location = new Point(12, 420);
+            button6.BackColor = Color.FromArgb(184, 210, 255);
+            button6.Cursor = Cursors.Hand;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Segoe UI", 12F);
+            button6.Location = new Point(12, 455);
             button6.Name = "button6";
-            button6.Size = new Size(319, 29);
+            button6.Size = new Size(319, 47);
             button6.TabIndex = 7;
             button6.Text = "Згенерувати флеш-картки";
-            button6.UseVisualStyleBackColor = true;
+            button6.UseVisualStyleBackColor = false;
             // 
             // StarForm
             // 
@@ -162,13 +192,13 @@
         #endregion
 
         private Panel panel1;
-        private Button button1;
-        private TextBox textBox1;
+        private Button btnSearch;
+        private TextBox txtSearch;
         private DataGridView gridViewStars;
         private Button button2;
         private Button button3;
         private Button button4;
-        private ComboBox comboBox1;
+        private ComboBox comboBoxFilterSearch;
         private Button button5;
         private Button button6;
         private DataGridViewTextBoxColumn acceptButtonDataGridViewTextBoxColumn;

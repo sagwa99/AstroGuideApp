@@ -15,9 +15,14 @@ namespace AstroGuideApp
 {
     public partial class StarForm : Form
     {
+        private List<Star> allStars = new List<Star>();
         public StarForm()
         {
             InitializeComponent();
+            comboBoxFilterSearch.Items.Add("Star");
+            comboBoxFilterSearch.Items.Add("Constellation");
+            comboBoxFilterSearch.SelectedIndex = 0;
+
         }
 
         public class Star
@@ -43,8 +48,47 @@ namespace AstroGuideApp
         {
 
             string json = File.ReadAllText(@"C:\Users\user\source\repos\AstroGuideApp\Data\stars.json");
-            List<Star> stars = JsonConvert.DeserializeObject<List<Star>>(json);
-            gridViewStars.DataSource = stars;
+            allStars = JsonConvert.DeserializeObject<List<Star>>(json);
+            gridViewStars.DataSource = allStars;
+        }
+
+        //search by star or constellation
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string searchText = txtSearch.Text.Trim().ToLower();
+            string searchCategory = comboBoxFilterSearch.SelectedItem.ToString();
+
+            if (searchCategory == "Star")
+            {
+                var starsInConstellations = allStars.Where(star =>
+                    star.Name.ToLower().Contains(searchText, StringComparison.OrdinalIgnoreCase)
+                ).ToList();
+
+                gridViewStars.DataSource = new BindingList<Star>(starsInConstellations);
+            }
+            else if (searchCategory == "Constellation")
+            {
+                var starsInConstellation = allStars.Where(star =>
+                    star.Constellation.ToLower().Contains(searchText, StringComparison.OrdinalIgnoreCase)
+                ).ToList();
+                gridViewStars.DataSource = new BindingList<Star>(starsInConstellation);
+            }
+
+            if (gridViewStars.Rows.Count == 1)
+            {
+                MessageBox.Show("Немає співпадінь.", "Search Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                gridViewStars.DataSource = allStars;
+            }
+
+            txtSearch.Clear();
+        }
+
+        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSearch_Click(sender, e);
+            }
         }
     }
 }
