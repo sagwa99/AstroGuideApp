@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             panelMenu = new Panel();
-            button1 = new Button();
+            btnFav = new Button();
             btnNavCalculator = new Button();
             btnNavFlashcard = new Button();
             btnNavConstellation = new Button();
@@ -44,7 +44,7 @@
             // 
             resources.ApplyResources(panelMenu, "panelMenu");
             panelMenu.BackColor = Color.FromArgb(184, 210, 255);
-            panelMenu.Controls.Add(button1);
+            panelMenu.Controls.Add(btnFav);
             panelMenu.Controls.Add(btnNavCalculator);
             panelMenu.Controls.Add(btnNavFlashcard);
             panelMenu.Controls.Add(btnNavConstellation);
@@ -52,17 +52,18 @@
             panelMenu.Controls.Add(panelLogo);
             panelMenu.Name = "panelMenu";
             // 
-            // button1
+            // btnFav
             // 
-            button1.BackColor = Color.FromArgb(184, 210, 255);
-            button1.Cursor = Cursors.Hand;
-            resources.ApplyResources(button1, "button1");
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 233, 255);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(238, 244, 255);
-            button1.Image = Properties.Resources.icons8_favorite_16;
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = false;
+            btnFav.BackColor = Color.FromArgb(184, 210, 255);
+            btnFav.Cursor = Cursors.Hand;
+            resources.ApplyResources(btnFav, "btnFav");
+            btnFav.FlatAppearance.BorderSize = 0;
+            btnFav.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, 233, 255);
+            btnFav.FlatAppearance.MouseOverBackColor = Color.FromArgb(238, 244, 255);
+            btnFav.Image = Properties.Resources.icons8_favorite_16;
+            btnFav.Name = "btnFav";
+            btnFav.UseVisualStyleBackColor = false;
+            btnFav.Click += btnFav_Click;
             // 
             // btnNavCalculator
             // 
@@ -75,6 +76,7 @@
             btnNavCalculator.Image = Properties.Resources.icons8_calculator_16;
             btnNavCalculator.Name = "btnNavCalculator";
             btnNavCalculator.UseVisualStyleBackColor = false;
+            btnNavCalculator.Click += btnNavCalculator_Click;
             // 
             // btnNavFlashcard
             // 
@@ -87,6 +89,7 @@
             btnNavFlashcard.Image = Properties.Resources.icons8_red_card_16;
             btnNavFlashcard.Name = "btnNavFlashcard";
             btnNavFlashcard.UseVisualStyleBackColor = false;
+            btnNavFlashcard.Click += btnNavFlashcard_Click;
             // 
             // btnNavConstellation
             // 
@@ -99,6 +102,7 @@
             btnNavConstellation.Image = Properties.Resources.icons8_constellation_16;
             btnNavConstellation.Name = "btnNavConstellation";
             btnNavConstellation.UseVisualStyleBackColor = false;
+            btnNavConstellation.Click += btnNavConstellation_Click;
             // 
             // btnNavStar
             // 
@@ -111,6 +115,7 @@
             btnNavStar.Image = Properties.Resources.icons8_star_16;
             btnNavStar.Name = "btnNavStar";
             btnNavStar.UseVisualStyleBackColor = false;
+            btnNavStar.Click += btnNavStar_Click;
             // 
             // panelLogo
             // 
@@ -142,7 +147,7 @@
         private Button btnNavCalculator;
         private Button btnNavFlashcard;
         private Button btnNavConstellation;
-        private Button button1;
+        private Button btnFav;
         private Panel panelDesktop;
     }
 }

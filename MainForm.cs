@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace AstroGuideApp
 {
-    public partial class MainForm: Form
+    public partial class MainForm : Form
     {
         public MainForm()
         {
@@ -22,7 +22,7 @@ namespace AstroGuideApp
         private Form activeForm = null;
         private void openChildForm(Form childForm)
         {
-            if(activeForm != null)
+            if (activeForm != null)
             {
                 activeForm.Close();
             }
@@ -34,6 +34,31 @@ namespace AstroGuideApp
             this.panelDesktop.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+
+        private void btnNavStar_Click(object sender, EventArgs e)
+        {
+            openChildForm(new StarForm());
+        }
+
+        private void btnNavConstellation_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ConstellationForm());
+        }
+
+        private void btnNavFlashcard_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FlashcardForm());
+        }
+
+        private void btnNavCalculator_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CalculatorForm());
+        }
+
+        private void btnFav_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FavoriteForm());
         }
     }
 }
