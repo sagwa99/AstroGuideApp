@@ -33,14 +33,14 @@
             comboBox1 = new ComboBox();
             button1 = new Button();
             textBox1 = new TextBox();
-            dataGridView1 = new DataGridView();
+            gridViewStars = new DataGridView();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
             button6 = new Button();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridViewStars).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -81,15 +81,15 @@
             textBox1.Size = new Size(377, 27);
             textBox1.TabIndex = 2;
             // 
-            // dataGridView1
+            // gridViewStars
             // 
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 35);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(673, 322);
-            dataGridView1.TabIndex = 2;
+            gridViewStars.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            gridViewStars.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gridViewStars.Location = new Point(12, 35);
+            gridViewStars.Name = "gridViewStars";
+            gridViewStars.RowHeadersWidth = 51;
+            gridViewStars.Size = new Size(673, 322);
+            gridViewStars.TabIndex = 2;
             // 
             // button2
             // 
@@ -146,15 +146,16 @@
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(dataGridView1);
+            Controls.Add(gridViewStars);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "StarForm";
             Text = "StarForm";
+            Load += StarForm_Load_1;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridViewStars).EndInit();
             ResumeLayout(false);
         }
 
@@ -163,12 +164,67 @@
         private Panel panel1;
         private Button button1;
         private TextBox textBox1;
-        private DataGridView dataGridView1;
+        private DataGridView gridViewStars;
         private Button button2;
         private Button button3;
         private Button button4;
         private ComboBox comboBox1;
         private Button button5;
         private Button button6;
+        private DataGridViewTextBoxColumn acceptButtonDataGridViewTextBoxColumn;
+        private DataGridViewCheckBoxColumn autoScrollDataGridViewCheckBoxColumn;
+        private DataGridViewCheckBoxColumn autoSizeDataGridViewCheckBoxColumn;
+        private DataGridViewTextBoxColumn autoSizeModeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn autoValidateDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn backColorDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn formBorderStyleDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn cancelButtonDataGridViewTextBoxColumn;
+        private DataGridViewCheckBoxColumn controlBoxDataGridViewCheckBoxColumn;
+        private DataGridViewCheckBoxColumn helpButtonDataGridViewCheckBoxColumn;
+        private DataGridViewImageColumn iconDataGridViewImageColumn;
+        private DataGridViewCheckBoxColumn isMdiContainerDataGridViewCheckBoxColumn;
+        private DataGridViewCheckBoxColumn keyPreviewDataGridViewCheckBoxColumn;
+        private DataGridViewTextBoxColumn locationDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn maximumSizeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn mainMenuStripDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn minimumSizeDataGridViewTextBoxColumn;
+        private DataGridViewCheckBoxColumn maximizeBoxDataGridViewCheckBoxColumn;
+        private DataGridViewCheckBoxColumn mdiChildrenMinimizedAnchorBottomDataGridViewCheckBoxColumn;
+        private DataGridViewCheckBoxColumn minimizeBoxDataGridViewCheckBoxColumn;
+        private DataGridViewTextBoxColumn opacityDataGridViewTextBoxColumn;
+        private DataGridViewCheckBoxColumn rightToLeftLayoutDataGridViewCheckBoxColumn;
+        private DataGridViewCheckBoxColumn showInTaskbarDataGridViewCheckBoxColumn;
+        private DataGridViewCheckBoxColumn showIconDataGridViewCheckBoxColumn;
+        private DataGridViewTextBoxColumn sizeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn sizeGripStyleDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn startPositionDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn textDataGridViewTextBoxColumn;
+        private DataGridViewCheckBoxColumn topMostDataGridViewCheckBoxColumn;
+        private DataGridViewTextBoxColumn transparencyKeyDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn windowStateDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn autoScrollMarginDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn autoScrollMinSizeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn accessibleDescriptionDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn accessibleNameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn accessibleRoleDataGridViewTextBoxColumn;
+        private DataGridViewCheckBoxColumn allowDropDataGridViewCheckBoxColumn;
+        private DataGridViewTextBoxColumn anchorDataGridViewTextBoxColumn;
+        private DataGridViewImageColumn backgroundImageDataGridViewImageColumn;
+        private DataGridViewTextBoxColumn backgroundImageLayoutDataGridViewTextBoxColumn;
+        private DataGridViewCheckBoxColumn causesValidationDataGridViewCheckBoxColumn;
+        private DataGridViewTextBoxColumn contextMenuStripDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn cursorDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn dataBindingsDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn dockDataGridViewTextBoxColumn;
+        private DataGridViewCheckBoxColumn enabledDataGridViewCheckBoxColumn;
+        private DataGridViewTextBoxColumn fontDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn foreColorDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn rightToLeftDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn;
+        private DataGridViewCheckBoxColumn useWaitCursorDataGridViewCheckBoxColumn;
+        private DataGridViewCheckBoxColumn visibleDataGridViewCheckBoxColumn;
+        private DataGridViewTextBoxColumn paddingDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn imeModeDataGridViewTextBoxColumn;
+        private BindingSource bindingSourceStars;
     }
 }

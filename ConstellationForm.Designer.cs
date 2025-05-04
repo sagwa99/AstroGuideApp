@@ -28,33 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            gridViewConstellations = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)gridViewConstellations).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // gridViewConstellations
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(269, 157);
-            label1.Name = "label1";
-            label1.Size = new Size(44, 20);
-            label1.TabIndex = 0;
-            label1.Text = "const";
+            gridViewConstellations.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gridViewConstellations.Location = new Point(12, 73);
+            gridViewConstellations.Name = "gridViewConstellations";
+            gridViewConstellations.RowHeadersWidth = 51;
+            gridViewConstellations.Size = new Size(673, 441);
+            gridViewConstellations.TabIndex = 0;
             // 
             // ConstellationForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(697, 803);
-            Controls.Add(label1);
+            Controls.Add(gridViewConstellations);
             FormBorderStyle = FormBorderStyle.None;
             Name = "ConstellationForm";
             Text = "ConstellationForm";
+            Load += ConstellationForm_Load;
+            ((System.ComponentModel.ISupportInitialize)gridViewConstellations).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private DataGridView gridViewConstellations;
     }
 }
