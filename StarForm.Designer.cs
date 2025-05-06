@@ -34,13 +34,16 @@
             txtSearch = new TextBox();
             comboBoxFilterSearch = new ComboBox();
             gridViewStars = new DataGridView();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            btnAddStar = new Button();
+            btnDeleteSelected = new Button();
+            btnToggleView = new Button();
             button5 = new Button();
             button6 = new Button();
+            panelCards = new FlowLayoutPanel();
+            picAddStar = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gridViewStars).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picAddStar).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -96,47 +99,50 @@
             gridViewStars.Size = new Size(673, 322);
             gridViewStars.TabIndex = 2;
             // 
-            // button2
+            // btnAddStar
             // 
-            button2.BackColor = Color.FromArgb(184, 210, 255);
-            button2.Cursor = Cursors.Hand;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 12F);
-            button2.Location = new Point(12, 402);
-            button2.Name = "button2";
-            button2.Size = new Size(107, 47);
-            button2.TabIndex = 3;
-            button2.Text = "Додати";
-            button2.UseVisualStyleBackColor = false;
+            btnAddStar.BackColor = Color.FromArgb(184, 210, 255);
+            btnAddStar.Cursor = Cursors.Hand;
+            btnAddStar.FlatAppearance.BorderSize = 0;
+            btnAddStar.FlatStyle = FlatStyle.Flat;
+            btnAddStar.Font = new Font("Segoe UI", 12F);
+            btnAddStar.Location = new Point(12, 402);
+            btnAddStar.Name = "btnAddStar";
+            btnAddStar.Size = new Size(107, 47);
+            btnAddStar.TabIndex = 3;
+            btnAddStar.Text = "Додати";
+            btnAddStar.UseVisualStyleBackColor = false;
+            btnAddStar.Click += btnAddStar_Click_1;
             // 
-            // button3
+            // btnDeleteSelected
             // 
-            button3.BackColor = Color.FromArgb(184, 210, 255);
-            button3.Cursor = Cursors.Hand;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 12F);
-            button3.Location = new Point(258, 402);
-            button3.Name = "button3";
-            button3.Size = new Size(111, 47);
-            button3.TabIndex = 4;
-            button3.Text = "Видалити";
-            button3.UseVisualStyleBackColor = false;
+            btnDeleteSelected.BackColor = Color.FromArgb(184, 210, 255);
+            btnDeleteSelected.Cursor = Cursors.Hand;
+            btnDeleteSelected.FlatAppearance.BorderSize = 0;
+            btnDeleteSelected.FlatStyle = FlatStyle.Flat;
+            btnDeleteSelected.Font = new Font("Segoe UI", 12F);
+            btnDeleteSelected.Location = new Point(125, 402);
+            btnDeleteSelected.Name = "btnDeleteSelected";
+            btnDeleteSelected.Size = new Size(111, 47);
+            btnDeleteSelected.TabIndex = 4;
+            btnDeleteSelected.Text = "Видалити";
+            btnDeleteSelected.UseVisualStyleBackColor = false;
+            btnDeleteSelected.Click += btnDeleteSelected_Click_1;
             // 
-            // button4
+            // btnToggleView
             // 
-            button4.BackColor = Color.FromArgb(184, 210, 255);
-            button4.Cursor = Cursors.Hand;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 12F);
-            button4.Location = new Point(125, 402);
-            button4.Name = "button4";
-            button4.Size = new Size(127, 47);
-            button4.TabIndex = 5;
-            button4.Text = "Редагувати";
-            button4.UseVisualStyleBackColor = false;
+            btnToggleView.BackColor = Color.FromArgb(184, 210, 255);
+            btnToggleView.Cursor = Cursors.Hand;
+            btnToggleView.FlatAppearance.BorderSize = 0;
+            btnToggleView.FlatStyle = FlatStyle.Flat;
+            btnToggleView.Font = new Font("Segoe UI", 12F);
+            btnToggleView.Location = new Point(305, 402);
+            btnToggleView.Name = "btnToggleView";
+            btnToggleView.Size = new Size(200, 47);
+            btnToggleView.TabIndex = 5;
+            btnToggleView.Text = "Змінити вигляд";
+            btnToggleView.UseVisualStyleBackColor = false;
+            btnToggleView.Click += btnToggleView_Click_1;
             // 
             // button5
             // 
@@ -145,7 +151,7 @@
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI", 12F);
-            button5.Location = new Point(375, 402);
+            button5.Location = new Point(511, 402);
             button5.Name = "button5";
             button5.Size = new Size(174, 47);
             button5.TabIndex = 6;
@@ -166,16 +172,40 @@
             button6.Text = "Згенерувати флеш-картки";
             button6.UseVisualStyleBackColor = false;
             // 
+            // panelCards
+            // 
+            panelCards.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panelCards.AutoScroll = true;
+            panelCards.Location = new Point(12, 508);
+            panelCards.Name = "panelCards";
+            panelCards.Size = new Size(673, 246);
+            panelCards.TabIndex = 8;
+            // 
+            // picAddStar
+            // 
+            picAddStar.BackColor = Color.FromArgb(184, 210, 255);
+            picAddStar.Cursor = Cursors.Hand;
+            picAddStar.Image = Properties.Resources.icons8_add_16;
+            picAddStar.Location = new Point(520, 462);
+            picAddStar.Name = "picAddStar";
+            picAddStar.Size = new Size(41, 40);
+            picAddStar.SizeMode = PictureBoxSizeMode.CenterImage;
+            picAddStar.TabIndex = 10;
+            picAddStar.TabStop = false;
+            picAddStar.Click += picAddStar_Click;
+            // 
             // StarForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(697, 803);
+            Controls.Add(picAddStar);
+            Controls.Add(panelCards);
             Controls.Add(button6);
             Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(btnToggleView);
+            Controls.Add(btnDeleteSelected);
+            Controls.Add(btnAddStar);
             Controls.Add(gridViewStars);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -186,6 +216,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)gridViewStars).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picAddStar).EndInit();
             ResumeLayout(false);
         }
 
@@ -195,9 +226,9 @@
         private Button btnSearch;
         private TextBox txtSearch;
         private DataGridView gridViewStars;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button btnAddStar;
+        private Button btnDeleteSelected;
+        private Button btnToggleView;
         private ComboBox comboBoxFilterSearch;
         private Button button5;
         private Button button6;
@@ -256,5 +287,7 @@
         private DataGridViewTextBoxColumn paddingDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn imeModeDataGridViewTextBoxColumn;
         private BindingSource bindingSourceStars;
+        private FlowLayoutPanel panelCards;
+        private PictureBox picAddStar;
     }
 }

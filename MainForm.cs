@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static AstroGuideApp.StarForm;
 
 namespace AstroGuideApp
 {
     public partial class MainForm : Form
     {
+        private List<Star> allStars;
         public MainForm()
         {
             InitializeComponent();
+            allStars = new List<Star>();
         }
 
 
@@ -38,7 +41,7 @@ namespace AstroGuideApp
 
         private void btnNavStar_Click(object sender, EventArgs e)
         {
-            openChildForm(new StarForm());
+            openChildForm(new StarForm(allStars, false));
         }
 
         private void btnNavConstellation_Click(object sender, EventArgs e)
@@ -58,7 +61,8 @@ namespace AstroGuideApp
 
         private void btnFav_Click(object sender, EventArgs e)
         {
-            openChildForm(new FavoriteForm());
+            var favoriteStars = allStars.Where(star => star.IsFavorite).ToList();
+            openChildForm(new StarForm(favoriteStars, true));
         }
     }
 }

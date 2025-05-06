@@ -63,6 +63,16 @@ namespace AstroGuideApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_calculator_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-calculator-16", resourceCulture);
@@ -156,6 +166,16 @@ namespace AstroGuideApp.Properties {
         internal static System.Drawing.Bitmap icons8_red_card_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-red-card-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_remove_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-remove-16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
