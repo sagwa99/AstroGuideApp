@@ -37,14 +37,16 @@
             lblRA = new Label();
             lblDec = new Label();
             picDeleteStar = new PictureBox();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)picFavorite).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picDeleteStar).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // lblName
             // 
             lblName.AutoSize = true;
-            lblName.Location = new Point(27, 16);
+            lblName.Location = new Point(30, 27);
             lblName.Name = "lblName";
             lblName.Size = new Size(50, 20);
             lblName.TabIndex = 1;
@@ -53,7 +55,7 @@
             // lblConstellation
             // 
             lblConstellation.AutoSize = true;
-            lblConstellation.Location = new Point(27, 36);
+            lblConstellation.Location = new Point(30, 47);
             lblConstellation.Name = "lblConstellation";
             lblConstellation.Size = new Size(50, 20);
             lblConstellation.TabIndex = 2;
@@ -62,7 +64,7 @@
             // lblMagnitude
             // 
             lblMagnitude.AutoSize = true;
-            lblMagnitude.Location = new Point(27, 56);
+            lblMagnitude.Location = new Point(30, 67);
             lblMagnitude.Name = "lblMagnitude";
             lblMagnitude.Size = new Size(50, 20);
             lblMagnitude.TabIndex = 3;
@@ -71,7 +73,7 @@
             // lblDistance
             // 
             lblDistance.AutoSize = true;
-            lblDistance.Location = new Point(27, 76);
+            lblDistance.Location = new Point(30, 87);
             lblDistance.Name = "lblDistance";
             lblDistance.Size = new Size(50, 20);
             lblDistance.TabIndex = 4;
@@ -82,7 +84,7 @@
             picFavorite.BackColor = Color.FromArgb(184, 210, 255);
             picFavorite.Cursor = Cursors.Hand;
             picFavorite.Image = Properties.Resources.icons8_favorite_16;
-            picFavorite.Location = new Point(539, 6);
+            picFavorite.Location = new Point(525, 30);
             picFavorite.Name = "picFavorite";
             picFavorite.Size = new Size(41, 40);
             picFavorite.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -92,7 +94,7 @@
             // lblLuminosity
             // 
             lblLuminosity.AutoSize = true;
-            lblLuminosity.Location = new Point(27, 96);
+            lblLuminosity.Location = new Point(30, 107);
             lblLuminosity.Name = "lblLuminosity";
             lblLuminosity.Size = new Size(50, 20);
             lblLuminosity.TabIndex = 6;
@@ -101,7 +103,7 @@
             // lblRA
             // 
             lblRA.AutoSize = true;
-            lblRA.Location = new Point(27, 116);
+            lblRA.Location = new Point(30, 127);
             lblRA.Name = "lblRA";
             lblRA.Size = new Size(50, 20);
             lblRA.TabIndex = 7;
@@ -110,7 +112,7 @@
             // lblDec
             // 
             lblDec.AutoSize = true;
-            lblDec.Location = new Point(27, 136);
+            lblDec.Location = new Point(30, 147);
             lblDec.Name = "lblDec";
             lblDec.Size = new Size(50, 20);
             lblDec.TabIndex = 8;
@@ -127,27 +129,36 @@
             picDeleteStar.SizeMode = PictureBoxSizeMode.CenterImage;
             picDeleteStar.TabIndex = 10;
             picDeleteStar.TabStop = false;
-            //picDeleteStar.Click += picDeleteStar_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(30, 50, 90, 1);
+            panel1.Controls.Add(picFavorite);
+            panel1.Controls.Add(lblDec);
+            panel1.Controls.Add(lblMagnitude);
+            panel1.Controls.Add(lblRA);
+            panel1.Controls.Add(lblName);
+            panel1.Controls.Add(lblLuminosity);
+            panel1.Controls.Add(lblConstellation);
+            panel1.Controls.Add(lblDistance);
+            panel1.Location = new Point(14, 6);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(613, 240);
+            panel1.TabIndex = 11;
             // 
             // StarCard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(picDeleteStar);
-            Controls.Add(lblDec);
-            Controls.Add(lblRA);
-            Controls.Add(lblLuminosity);
-            Controls.Add(picFavorite);
-            Controls.Add(lblDistance);
-            Controls.Add(lblMagnitude);
-            Controls.Add(lblConstellation);
-            Controls.Add(lblName);
+            Controls.Add(panel1);
             Name = "StarCard";
-            Size = new Size(638, 246);
+            Size = new Size(660, 322);
             ((System.ComponentModel.ISupportInitialize)picFavorite).EndInit();
             ((System.ComponentModel.ISupportInitialize)picDeleteStar).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -160,5 +171,6 @@
         private Label lblRA;
         private Label lblDec;
         private PictureBox picDeleteStar;
+        private Panel panel1;
     }
 }

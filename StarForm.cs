@@ -62,29 +62,21 @@ namespace AstroGuideApp
                 allStars = stars;
             }
 
-            gridViewStars.DataSource = allStars;
             LoadCards(isFavoriteView ? allStars.Where(s => s.IsFavorite).ToList() : allStars);
 
 
             if (isFavoriteView)
             {
-                btnAddStar.Visible = false;
-                btnDeleteSelected.Visible = false;
-                btnToggleView.Visible = false;
                 comboBoxFilterSearch.Visible = false;
-                button5.Visible = false;
                 button6.Visible = false;
                 btnSearch.Visible = false;
                 picAddStar.Visible = false;
-                gridViewStars.Visible = false;
                 txtSearch.Visible = false;
                 panel1.Visible = false;
                 panelCards.Dock = DockStyle.Fill;
                 panelCards.Visible = true;
             }
 
-
-            gridViewStars.ClearSelection();
         }
 
 
@@ -122,28 +114,26 @@ namespace AstroGuideApp
             string searchText = txtSearch.Text.Trim().ToLower();
             string searchCategory = comboBoxFilterSearch.SelectedItem.ToString();
 
-            if (searchCategory == "Star")
+            var filteredStars = allStars.Where(star =>
             {
-                var starsInConstellations = allStars.Where(star =>
-                    star.Name.ToLower().Contains(searchText, StringComparison.OrdinalIgnoreCase)
-                ).ToList();
+                bool matchesQuery = star.Name.ToLower().Contains(searchText) ||
+                                    star.Constellation.ToLower().Contains(searchText);
 
-                gridViewStars.DataSource = new BindingList<Star>(starsInConstellations);
-            }
-            else if (searchCategory == "Constellation")
-            {
-                var starsInConstellation = allStars.Where(star =>
-                    star.Constellation.ToLower().Contains(searchText, StringComparison.OrdinalIgnoreCase)
-                ).ToList();
-                gridViewStars.DataSource = new BindingList<Star>(starsInConstellation);
-            }
+                if (searchCategory == "Star")
+                    return star.Name.ToLower().Contains(searchText);
+                else if (searchCategory == "Constellation")
+                    return star.Constellation.ToLower().Contains(searchText);
+                else
+                    return matchesQuery;
+            }).ToList();
 
-            if (gridViewStars.Rows.Count == 1)
+            if (filteredStars.Count == 0)
             {
                 MessageBox.Show("Немає співпадінь.", "Search Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                gridViewStars.DataSource = allStars;
+                filteredStars = allStars;
             }
 
+            LoadCards(filteredStars);
             txtSearch.Clear();
         }
 
@@ -152,44 +142,6 @@ namespace AstroGuideApp
             if (e.KeyCode == Keys.Enter)
             {
                 btnSearch_Click(sender, e);
-            }
-        }
-
-        private void btnAddStar_Click_1(object sender, EventArgs e)
-        {
-
-            using (AddStarForm addForm = new AddStarForm())
-            {
-                if (addForm.ShowDialog() == DialogResult.OK)
-                {
-                    Star newStar = addForm.NewStar;
-                    allStars.Add(newStar);
-                    SaveStarsToJson();
-                    gridViewStars.DataSource = new BindingList<Star>(allStars);
-                    LoadCards(allStars);
-                }
-            }
-        }
-
-        private void btnToggleView_Click_1(object sender, EventArgs e)
-        {
-            bool showCards = !panelCards.Visible;
-            panelCards.Visible = showCards;
-            gridViewStars.Visible = !showCards;
-        }
-
-        private void btnDeleteSelected_Click_1(object sender, EventArgs e)
-        {
-            if (gridViewStars.SelectedRows.Count > 0)
-            {
-                var starToDelete = gridViewStars.SelectedRows[0].DataBoundItem as Star;
-                if (starToDelete != null)
-                {
-                    allStars.Remove(starToDelete);
-                    SaveStarsToJson();
-                    gridViewStars.DataSource = new BindingList<Star>(allStars);
-                    LoadCards(allStars);
-                }
             }
         }
 
@@ -207,12 +159,20 @@ namespace AstroGuideApp
             }
         }
 
-        //обробник на видалення зірки
         private void OnDeleteStarRequested(Star starToDelete)
         {
-            allStars.Remove(starToDelete);
-            SaveStarsToJson();
-            LoadCards(allStars.Where(s => !isFavoriteView || s.IsFavorite).ToList());
+            var result = MessageBox.Show(
+            $"Видалити '{starToDelete.Name}'?",
+            "Підтвердіть видалення",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                allStars.Remove(starToDelete);
+                SaveStarsToJson();
+                LoadCards(allStars.Where(s => !isFavoriteView || s.IsFavorite).ToList());
+            }
         }
     }
 }

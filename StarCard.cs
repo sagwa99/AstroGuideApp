@@ -58,11 +58,5 @@ namespace AstroGuideApp
          ? Image.FromFile(basePath + "icons8-filled-bookmark-ribbon-16.png")
          : Image.FromFile(basePath + "icons8-favorite-16.png");
         }
-
-        //private void picDeleteStar_Click(object sender, EventArgs e)
-        //{
-        //    //делегат на видалення
-        //    onDeleteRequested?.Invoke(star);
-        //}
     }
 }
